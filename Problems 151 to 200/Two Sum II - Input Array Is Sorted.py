@@ -15,6 +15,7 @@ class Solution:
         for elem in numbers:
             if target - elem not in seen:
                 seen.add(elem)
+                
             else:
                 idx1 = numbers.index(target-elem)+1
                 idx2 = numbers.index(elem)+1
