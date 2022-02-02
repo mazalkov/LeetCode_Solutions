@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/word-pattern
 
-# Runtime: 43 ms, faster than 50.30% of Python3 online submissions for Word Pattern.
-# Happy with the runtime, dicts should be fast but I feel my if-else structure is verbose, unsure how to reduce.
+# Runtime: 24 ms, faster than 97.95% of Python3 online submissions for Word Pattern.
+# Got rid of the final else check for seen[char] = words[i], now runtime is very fast.
 
 # Memory Usage: 13.9 MB, less than 99.41% of Python3 online submissions for Word Pattern.
 # Very happy with memory usage, only creating a dict and list of split words is highly space saving.
@@ -26,8 +26,7 @@ class Solution:
                 if words[i] in seen.values():
                     return False
                 
-                else:
-                    seen[char] = words[i]
+            seen[char] = words[i]
                 
         
         return True
