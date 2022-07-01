@@ -13,5 +13,6 @@ class Solution:
             
             visited.add(s[right_ptr])
             max_length = max(max_length, right_ptr-left_ptr+1)
+
             
         return max_length
