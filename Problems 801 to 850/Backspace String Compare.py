@@ -18,4 +18,4 @@ class Solution:
         s_reduced = reduce(s)
         t_reduced = reduce(t)
 
-        return s_mod == t_mod
+        return s_reduced == t_reduced
