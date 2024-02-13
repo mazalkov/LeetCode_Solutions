@@ -1,0 +1,11 @@
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        
+        def is_palindrome(string):
+            return string == string[::-1]
+
+        for word in words:
+            if is_palindrome(word):
+                return word
+
+        return ""
